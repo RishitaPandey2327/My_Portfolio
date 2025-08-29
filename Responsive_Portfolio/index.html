@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+    <body >
+        <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar"> 
+            <a href="#home" class="active">Home</a> 
+            <a href="#about">About</a>
+            <a href="#services">Services</a> 
+            <a href="#portfolio">Portfolio</a> 
+            <a href="#contact">Contact</a>
+        </nav>
+    
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's me</h3>
+            <h1>Rishita Pandey</h1>
+            <!--<h3>And I'm a <span class="multiple-text"></span></h3> -->
+<h3>And I'm <span id="article" class="article-span"></span> <span class="multiple-text"></span></h3>
+<p>As a B.Tech Computer Science student with a passion for innovation , I have developed a keen interest in software development.I am actively seeking opportunities to collaborate,contibute and grow in the tech industry.</p>
+     <div class="social-media">
+        <a href="https://www.linkedin.com/in/rishita-pandey-19a8a82a8/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/RishitaPandey2327" target="_blank"><i class='bx bxl-github'></i></a>
+        
+    </div>   
+    <a href="https://drive.google.com/file/d/1r_CTdDUQMEVHBbK1E9CTxBVos6IdJRmr/view?usp=drive_link" target="_blank" class="btn">Download CV</a>
+</div>
+<div class="home-img" >
+    <img src="images/home.jpg" alt="">
+</div>
+
+    </section>
+
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/home.jpg" alt="">
+        </div>
+    <div class="about-content">
+        <h2 class="heading">About  <span>Me</span></h2>
+        <h3>Frontend  Developer</h3>
+        <p>
+Experienced in HTML, CSS, JavaScript, and modern frameworks, I develop scalable, high-performance frontend solutions that bring designs to life.        </p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+    </section>
+
+    <section class="services" id="services">
+                <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+        <h3> Web Development</h3>
+        <p>
+           Passionate web developer skilled in building responsive, user-friendly, and visually appealing websites using modern web technologies
+        </p><br><br>
+        <a href="#" class="btn">Read More</a>
+        </div>
+         <div class="services-box">
+                <i class='bx  bx-mobile'></i>
+        <h3> Android Development</h3>
+        <p>
+Skilled in Kotlin, Java, and Android SDK to create scalable and responsive mobile solutions.        </p> <br><br>
+        <a href="#" class="btn">Read More</a>
+        </div>
+         <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+        <h3> Coordinator</h3>
+        <p>
+Leading and managing events, workshops, and projects within Kinesis Technical Society.        </p> <br><br>
+        <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+    </section> 
+    <!-- ====== Services Section (with Modal Popups) ====== -->
+<!-- ===== Services Section (safe version) ===== -->
+<section class="services" id="services">
+  <h2 class="heading">Our <span>Services</span></h2>
+
+  <div class="services-container">
+
+    <!-- Web -->
+    <div class="services-box">
+      <i class='bx bx-code-alt'></i>
+      <h3>Web Development</h3>
+      <p>Passionate web developer skilled in responsive and modern web technologies.</p><br><br>
+      <button class="svc-btn" data-target="#modal-web">Read More</button>
+    </div>
+
+    <!-- Android -->
+    <div class="services-box">
+      <i class='bx bx-mobile'></i>
+      <h3>Android Development</h3>
+      <p>Skilled in Kotlin, Java, and Android SDK to create scalable mobile solutions.</p><br><br>
+      <button class="svc-btn" data-target="#modal-android">Read More</button>
+    </div>
+
+    <!-- KTS -->
+    <div class="services-box">
+      <i class='bx bx-bar-chart-alt'></i>
+      <h3>Coordinator</h3>
+      <p>Leading and managing events, workshops, and projects within Kinesis Technical Society.</p><br><br>
+      <button class="svc-btn" data-target="#modal-kts">Read More</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Modal Structure ===== -->
+<div id="modal-web" class="svc-modal">
+  <div class="svc-overlay" data-close></div>
+  <div class="svc-box">
+    <span class="svc-close" data-close>&times;</span>
+    <h2>🌐 Web Development</h2>
+    <p>I build responsive, fast, and user-friendly websites with modern technologies.</p>
+  </div>
+</div>
+
+<div id="modal-android" class="svc-modal">
+  <div class="svc-overlay" data-close></div>
+  <div class="svc-box">
+    <span class="svc-close" data-close>&times;</span>
+    <h2>📱 Android Development</h2>
+    <p>I create Android apps with Kotlin/Java, focusing on UX and performance.</p>
+  </div>
+</div>
+
+<div id="modal-kts" class="svc-modal">
+  <div class="svc-overlay" data-close></div>
+  <div class="svc-box">
+    <span class="svc-close" data-close>&times;</span>
+    <h2>🎯 Coordinator at KTS</h2>
+    <p>I lead and manage technical events, workshops, and collaborations.</p>
+  </div>
+</div>
+
+
+
+<section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest  <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/weather_app.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>WEATHER APP</h4>
+                    <p>A responsive weather application built using HTML, CSS, and JavaScript. It fetches real-time weather data through APIs and displays temperature, humidity, and forecast details in a clean dark-themed interface. The app is fully responsive, ensuring a smooth experience across devices.</p>
+                <a href="https://weather-bpnd51zlp-rishita-projects-4531a1f5.vercel.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+           <div class="portfolio-box">
+                <img src="images/talk-gpt.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>TALK GPT</h4>
+                    <p>An AI-powered chatbot built with Next.js, React, and TypeScript, styled with modern CSS and PostCSS. It provides seamless, real-time interactions through API integration, offering a clean dark-themed UI for an engaging user experience. The project demonstrates component-based architecture, responsive design, and scalable frontend development.</p>
+                <a href="https://talk-gpt-kks4-l9oqg3i8j-arins-projects-4531a1f5.vercel.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <!-- <div class="portfolio-box">
+                <img src="images/digital-market.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Digital Marketing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, commodi quod! Recusandae itaque autem aut earum, pariatur nobis ipsum dolores?</p>
+                <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+             <div class="portfolio-box">
+                <img src="images/digital-market.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Digital Marketing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, commodi quod! Recusandae itaque autem aut earum, pariatur nobis ipsum dolores?</p>
+                <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+             <div class="portfolio-box">
+                <img src="images/digital-market.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Digital Marketing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, commodi quod! Recusandae itaque autem aut earum, pariatur nobis ipsum dolores?</p>
+                <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+             <div class="portfolio-box">
+                <img src="images/digital-market.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Digital Marketing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, commodi quod! Recusandae itaque autem aut earum, pariatur nobis ipsum dolores?</p>
+                <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div> -->
+        
+        </div>
+    </section>
+
+   
+
+  <section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span></h2> 
+
+  <form action="https://formspree.io/f/mwpnvrna" method="POST" id="contact-form">
+    <div class="input-box">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+      <input type="tel" name="phone" placeholder="Mobile Number" required>
+      <input type="text" name="subject" placeholder="Email Subject" required>
+    </div>
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy;2025 by Rishita | All Rights Reserved</p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i>
+</a>
+</div>
+</footer>
+
+
+    
+<!--Scroll reveal-->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="js/script.js"></script>
+</body>
+    
+</html>
